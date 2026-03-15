@@ -2,3 +2,7 @@ fastapi
 uvicorn
 pydantic>=2
 python-dotenv
+google-adk
+httpx
+mcp[cli]
+google-genai

@@ -1,0 +1,117 @@
+{
+  "mission_id": "rahmah-ops-001",
+  "coordinator_name": "Nicho",
+  "config": {
+    "city": "Johor Bahru",
+    "country": "Malaysia",
+    "start_time": "2026-03-15T16:30:00+08:00",
+    "estimated_maghrib_time": "2026-03-15T19:23:00+08:00",
+    "minutes_to_maghrib": 90
+  },
+  "package_batches": [
+    {
+      "batch_id": "batch-a1",
+      "package_type": "cooked_meals",
+      "quantity": 30,
+      "expiry_time": "2026-03-15T19:00:00+08:00",
+      "safe": true
+    },
+    {
+      "batch_id": "batch-b1",
+      "package_type": "dry_goods",
+      "quantity": 20,
+      "expiry_time": "2026-03-16T12:00:00+08:00",
+      "safe": true
+    }
+  ],
+  "distribution_points": [
+    {
+      "point_id": "p1",
+      "name": "Masjid Al-Falah",
+      "address": "Johor Bahru City Centre",
+      "capacity": 20,
+      "assigned_packages": 0,
+      "status": "open"
+    },
+    {
+      "point_id": "p2",
+      "name": "Taman Community Hall",
+      "address": "Taman Universiti",
+      "capacity": 15,
+      "assigned_packages": 0,
+      "status": "open"
+    },
+    {
+      "point_id": "p3",
+      "name": "Shelter Harmoni",
+      "address": "Skudai",
+      "capacity": 15,
+      "assigned_packages": 0,
+      "status": "open"
+    }
+  ],
+  "volunteers": [
+    {
+      "volunteer_id": "v1",
+      "name": "Aiman",
+      "location": "UTM Gate",
+      "vehicle_capacity": 10,
+      "available": true,
+      "status": "available",
+      "assigned_point_id": null
+    },
+    {
+      "volunteer_id": "v2",
+      "name": "Farah",
+      "location": "Skudai",
+      "vehicle_capacity": 8,
+      "available": true,
+      "status": "available",
+      "assigned_point_id": null
+    },
+    {
+      "volunteer_id": "v3",
+      "name": "Hakim",
+      "location": "Johor Jaya",
+      "vehicle_capacity": 12,
+      "available": true,
+      "status": "available",
+      "assigned_point_id": null
+    },
+    {
+      "volunteer_id": "v4",
+      "name": "Siti",
+      "location": "Taman Universiti",
+      "vehicle_capacity": 6,
+      "available": true,
+      "status": "available",
+      "assigned_point_id": null
+    }
+  ],
+  "recipient_clusters": [
+    {
+      "cluster_id": "r1",
+      "area_name": "Johor Bahru Central",
+      "point_id": "p1",
+      "households": 18,
+      "status": "pending"
+    },
+    {
+      "cluster_id": "r2",
+      "area_name": "Taman Universiti Cluster",
+      "point_id": "p2",
+      "households": 14,
+      "status": "pending"
+    },
+    {
+      "cluster_id": "r3",
+      "area_name": "Skudai Shelter Zone",
+      "point_id": "p3",
+      "households": 12,
+      "status": "pending"
+    }
+  ],
+  "notifications": [],
+  "blocked_batch_ids": [],
+  "incidents": []
+}

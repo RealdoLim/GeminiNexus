@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RahmahOps</title>
+  <link rel="stylesheet" href="/app/styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <h1>RahmahOps</h1>
+      <p class="tagline">An agentic food aid coordination swarm for Ramadan operations.</p>
+    </div>
+    <div class="hero-actions">
+      <button id="launchBtn">Launch Mission</button>
+      <button id="cancelVolunteerBtn" class="warning">Trigger Volunteer Cancellation</button>
+      <button id="maghribBtn" class="danger">Trigger Maghrib Critical</button>
+      <button id="resetBtn" class="secondary">Reset Demo</button>
+    </div>
+  </header>
+
+  <main class="grid">
+
+    <section class="panel safety-panel">
+  <h2>Mission Validation & Safety</h2>
+  <div id="guardrailStatus" class="guardrail-status">Mission validation not checked yet.</div>
+  <div id="guardrailCategories" class="guardrail-categories"></div>
+</section>
+
+    <section class="panel summary-panel">
+      <h2>Mission Summary</h2>
+      <div id="summaryCards" class="cards"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Distribution Points</h2>
+      <div id="pointsTable"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Volunteer Roster</h2>
+      <div id="volunteersTable"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Route Plan</h2>
+      <div id="routesTable"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Volunteer Assignments</h2>
+      <div id="assignmentsTable"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Incident Feed</h2>
+      <div id="incidentsPanel"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Recipient Clusters</h2>
+      <div id="recipientsTable"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Notification Feed</h2>
+      <div id="notificationsPanel"></div>
+    </section>
+
+    <section class="panel logs-panel">
+      <h2>Agent Thinking Logs</h2>
+      <div id="logStream" class="log-stream"></div>
+    </section>
+  </main>
+
+  <script src="/app/dashboard.js"></script>
+</body>
+</html>
